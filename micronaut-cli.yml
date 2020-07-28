@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.mycompany.myapp
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, docker, file-watch, graalvm, gradle, http-client, java, java-application, jib, junit, logback, netty-server, readme, shade, yaml]
