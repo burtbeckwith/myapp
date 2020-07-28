@@ -92,3 +92,13 @@ task nativeImage(type: Exec) {
        '--no-server',
        '-jar', 'libs/' + project.name + '-' + project.version + '-all.jar'
 }
+
+jib {
+    from {
+        image	= 'arm64v8/openjdk:8-slim'
+    }
+    container {
+        ports = ['7777']
+        format = 'OCI'
+    }
+}
